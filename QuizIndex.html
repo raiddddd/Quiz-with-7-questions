@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="Content-Security-Policy" content="default-src 'self'">
+  <meta name="application-name" content="My first quizz">
+  <meta name="google" content="notranslate">
+  <meta name="subject" content="Un quizz despre HTML">
+  <meta name="rating" content="General">
+  <title>Quizzzz timeeeee</title>
+  <link rel="stylesheet" href="QuizCSS.css">
+  <link href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <script src="QuizJS.js" defer></script>
+  <meta name="author" content="Moga Andrei">
+  <meta name="description" content="My first form page made with pure HTML, CSS and JS. The second one may be made with Bootstrap, but I shall see.">
+</head>
+<body>
+
+  <header class="header center">
+    <h1 class="header-heading">Welcome to my Quizzz!</h1>
+    <p class="header-paragraph">Check the correct answers and learn my respect. What do you say?</p>
+    <p class="header-paragraph">Each good response takes you closer and closer to the perfection. Knowing HTML means knowing the whole universe itself. So, be ready!</p>
+  </header>
+
+  <button class="pressForStart">Press to start</button>
+    
+  <div class="counter center d-none">
+    <h3>Start in: <span class="counting-span"></span></h3>
+  </div>
+
+  <form class="d-none center">
+    <div class="main-section div-center">
+      <p>1. Where does HTML abbreviation come from?</p>
+      <div class="sub-main-section">
+        <input class="input" type="radio" id="answer1" name="q1" value="A">
+        <label for="answer1" class="label">Hyper Time Management Labour</label>
+      </div>
+      <div class="sub-main-section">
+        <input type="radio" id="answer2" name="q1" value="B">
+        <label for="answer2" class="label">HyperText Markup Language</label>
+      </div>    
+    </div>
+    <hr>
+    
+  <div class="main-section div-center">
+    <p>2. What <span class="in-section-span">&lt;br&gt;</span> means for the browser?</p>
+    <div class="sub-main-section">
+      <input class="input" type="radio" id="answer3" name="q2" value="A">
+      <label for="answer3" class="label">Browser will make a new line for the content that comes after</label>
+    </div>
+    <div class="sub-main-section">
+      <input type="radio" id="answer4" name="q2" value="B">
+      <label for="answer4" class="label">br stands for "Break Rules"</label>
+    </div>    
+  </div>
+  <hr>
+
+  <div class="main-section div-center">
+    <p>3. What tag do you use for an unordered list?</p>
+    <div class="sub-main-section">
+      <input class="input" type="radio" id="answer5" name="q3" value="A">
+      <label for="answer5" class="label">&lt;ul&gt;</label>
+    </div>
+    <div class="sub-main-section">
+      <input type="radio" id="answer6" name="q3" value="B">
+      <label for="answer6" class="label">&lt;ol&gt;</label>
+    </div>    
+  </div>
+  <hr>
+  
+  <div class="main-section div-center">
+    <p>4. What HTML is for web-dev industry?</p>
+    <div class="sub-main-section">
+      <input class="input" type="radio" id="answer7" name="q4" value="A">
+      <label for="answer7" class="label">An <abbr title="object oriented programming">OOP</abbr> programing language</label>
+    </div>
+    <div class="sub-main-section">
+      <input type="radio" id="answer8" name="q4" value="B">
+      <label for="answer8" class="label">A tool for writing the main structure of a web page</label>
+    </div>    
+  </div>
+  <hr>
+  
+  <div class="main-section div-center">
+    <p>5. What is the most well known code editor where you can write HTML?</p>
+    <div class="sub-main-section">
+      <input class="input" type="radio" id="answer9" name="q5" value="A">
+      <label for="answer9" class="label">There is no such thing</label>
+    </div>
+    <div class="sub-main-section">
+      <input type="radio" id="answer10" name="q5" value="B">
+      <label for="answer10" class="label">Visual Studio Code</label>
+    </div>    
+  </div>
+  <hr>
+  
+  <div class="main-section div-center">
+    <p>6. Is HTML used to create apps for android and ios?</p>
+    <div class="sub-main-section">
+      <input class="input" type="radio" id="answer11" name="q6" value="A">
+      <label for="answer11" class="label">No</label>
+    </div>
+    <div class="sub-main-section">
+      <input type="radio" id="answer12" name="q6" value="B">
+      <label for="answer12" class="label">Yes</label>
+    </div>    
+  </div>
+  <hr>
+  
+  <div class="main-section div-center">
+    <p>7. How do you know if you understood HTML?</p>
+    <div class="sub-main-section">
+      <input class="input" type="radio" id="answer13" name="q7" value="A">
+      <label for="answer13" class="label">You are able to explain it well even to a 5yo child</label>
+    </div>
+    <div class="sub-main-section">
+      <input type="radio" id="answer14" name="q7" value="B">
+      <label for="answer14" class="label">HTML is impossible to master. Is harder than anything, even engineering.</label>
+    </div>    
+  </div>
+  <div class="submit center">
+    <input class="submit" type="submit" value="Check your score">
+  </div>
+  </form>
+  <footer>
+    <div class="footer">
+
+    </div>
+  </footer>
+
+  <div class="modal d-none" id="modal">
+    <div class="modal-header">
+      <div class="title">Congrats for your score!</div>
+      <button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">Your final score is <span class="max-score score-final"></span> out of <span class="max-score">7</span>.</div>
+    <button class="reset">Reset form</button>
+  </div>
+  <div id="overlay" class="d-none"></div>
+</body>
+</html>

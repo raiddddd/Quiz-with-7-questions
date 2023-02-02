@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Faustina', serif;
+}
+
+.center {
+  width: 80vw;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.header {
+  color: #1D3F5F;
+  width: 100%;
+}
+
+.header-heading {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.8em;
+}
+
+.header-paragraph {
+  text-align: center;
+  font-size: 1.3em;
+  max-width: 800px;
+  margin: 0 auto 10px auto;
+}
+
+.pressForStart {
+  display: block;
+  margin: 0 auto;
+  font-size: 1.1em;
+  font-weight: 600;
+  padding: 10px 15px;
+  border-radius: 20px;
+  box-shadow: 3px 3px #1D3F5F;
+  border: 2px solid #1D3F5F;
+  color:#1D3F5F;
+  background-color:#FFE0B9;  
+}
+
+.pressForStart:hover {
+  background-color:#ffeeda;
+  color:#0b1b29;
+  border: 2px solid #0b1b29;
+  box-shadow: 3px 3px #0b1b29;
+}
+
+div.counter {
+  margin-top: -20px;
+}
+.counter h3 {
+  text-align: center;
+  font-size: 1.9em;
+  font-weight: 600;
+}
+
+.counter span {
+  font-size: 2.2em;
+  color: red;
+}
+
+form.center {
+  width: 80vw;
+  margin: 50px auto;
+  background-color: #EEEEEE;
+  color: #1D3F5F;
+  border-radius: 20px;
+}
+
+.main-section {
+  margin: 30px 0px 40px 30px;
+  border-radius: 10px;
+}
+
+.main-section p {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.main-section .sub-main-section {
+  margin: 10px 0px 5px 20px;
+}
+
+.main-section input,
+.main-section label {
+  font-size: 1.4em;
+  margin: 5px 0px 10px 5px;
+}
+
+hr {
+  width: 70vw;
+  margin: 0 auto;
+  border-top: 1px dashed #B0250F;
+  border-bottom: 1px dashed #B0250F;
+  border-left: none;
+  height: 6px;
+}
+
+abbr {
+  font-size: 1.1em;
+  font-weight: 600;
+  border-bottom: 1px solid #1D3F5F;
+}
+
+input.submit {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-left: 30px;
+  padding: 10px 15px;
+  background-color: #1D3F5F;
+  color:#FFE0B9;
+  border-radius: 5px;
+}
+
+input.submit:hover {
+  background-color:#0b1b29;
+  color: #ffeeda;
+  box-shadow: 0px 3px 6px rgba(100, 100, 100, 0.1);
+}
+
+.footer {
+  height: 100px;
+}
+
+.d-none {
+  display: none;
+}
+
+.final-result {
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-left: 30px;
+  padding: 10px 15px;
+}
+
+.score-final {
+  font-size: 1.4em;
+}
+.max-score {
+  font-size: 1.4em;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 200ms ease-in-out;
+  border: 3px solid #1D3F5F;
+  background-color:#FFE0B9;
+  color:#1D3F5F;
+  border-radius: 10px;
+  z-index: 10;
+  width: 600px;
+  max-width: 80%;
+}
+
+.reset {
+  margin: 0 40% 15px 40%;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 600;
+  padding: 10px 15px;
+  border-radius: 20px;
+  box-shadow: 3px 3px #1D3F5F;
+  border: 2px solid #1D3F5F;
+  color:#1D3F5F;
+  background-color:#FFE0B9;
+}
+
+.reset:hover {
+  background-color:#ffeeda;
+  color:#0b1b29;
+  border: 2px solid #0b1b29;
+  box-shadow: 3px 3px #0b1b29;
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px dashed #1D3F5F;
+}
+
+.modal-header .title {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 2.2em;
+  font-weight: bold;
+}
+
+.modal-header .close-button:hover {
+  color:#B0250F;
+}
+
+.modal-body {
+  padding: 15px 15px;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:#1D3F5F;
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 0.6;
+  pointer-events: all;
+}
+
+@media(max-width: 480px) {
+
+  header,
+  form,
+  .modal
+   {
+    max-width: 400px;
+  }
+
+  .main-section {
+    margin: 20px 0px 30px 10px;
+    border-radius: 10px;
+  }
+
+  .main-section .sub-main-section {
+    margin: 10px 0px 5px 5px;
+  }
+
+  div + .submit {
+    position: relative;
+    left: -20px;
+  }
+  input.submit {
+    display: block;
+    margin: 0 auto;
+  }
+  .modal {
+    width: 90vw;
+  }
+  .modal .title {
+    font-size: 1.5em;
+  }
+  .modal .modal-body {
+    text-align:justify;
+  }
+}
